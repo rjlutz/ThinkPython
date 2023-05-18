@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ThinkPython.iml" filepath="$PROJECT_DIR$/.idea/ThinkPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ThinkPython.wiki/.idea/ThinkPython.wiki.iml" filepath="$PROJECT_DIR$/../ThinkPython.wiki/.idea/ThinkPython.wiki.iml" />
     </modules>
   </component>
 </project>
