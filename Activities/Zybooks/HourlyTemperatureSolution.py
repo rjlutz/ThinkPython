@@ -19,4 +19,8 @@ hourly_temperature = user_input.split()
 
 
 ''' Your solution goes here '''
-#TODO
+for index, temp in enumerate(hourly_temperature):
+    if index > 0:
+        print(f'->', end=" ")
+    print(f'{temp}', end=" ")
+print()
