@@ -14,9 +14,10 @@
 # centered_average([-10, -4, -2, -4, -2, 0]) → -3
 
 def centered_average(nums):
-    nums.sort()
-    trunc_copy = nums[1:len(nums) - 1]
-    return int(sum(trunc_copy) / len(trunc_copy))
+    # nums.sort() careful -- introduces side effects!
+    nums_copy = sorted(nums)
+    trunc_copy = nums_copy[1:len(nums) - 1]
+    return sum(trunc_copy) // len(trunc_copy)
 
 
 print(centered_average([1, 2, 3, 4, 100]))
@@ -26,4 +27,4 @@ print(centered_average([-10, -4, -2, -4, -2, 0]))
 nums = [2, 1, -32000, 3, 4000]
 print(nums)
 print(centered_average(nums))  # careful, watch for side effects!
-print(nums)
+print(nums)                    # will be different if nums.sort() was used

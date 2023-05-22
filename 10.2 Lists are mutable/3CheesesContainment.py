@@ -15,7 +15,7 @@ else:
 # result = 'Edam' in cheeses
 # print(result)         # simpler!
 
-print('Brie' in cheeses) # even simpler!
+print('Brie' in cheeses)  # even simpler!
 
 
 

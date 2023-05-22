@@ -1,5 +1,6 @@
 import random
 
+
 def prompt():
     print()
     print("RANDOM STUDENT SELECTOR")
@@ -18,7 +19,7 @@ def select_random_name():
     if len(names) == 0:
         result = 'list empty'
     elif all(used):
-        result =  'all used'
+        result = 'all used'
     else:
         index = random.randint(0, len(names) - 1)
         while used[index]:  # loop until eligible name is found
@@ -57,7 +58,7 @@ def run():
             name = select_random_name()
             if name == 'all used':
                 print('sorry no names are eligible to be selected')
-            elif  name == 'list empty':
+            elif name == 'list empty':
                 print('sorry names list is empty')
             else:
                 print("Selected name: {}".format(name))
@@ -71,6 +72,7 @@ def run():
         else:
             name = select_random_name()
             print("Selected name: {}".format(name))
+
 
 names = ["Bob", "Pete", "Mary"]
 used = [False] * len(names)
